@@ -1,6 +1,11 @@
 # MEAN Stack Template 
 Use this repo as a starting point to get started with a MEAN full-stack application using Mongoose to connect to your database, use Angular for views, and Angular Material for styles.
 
+## Spin up everything
+1. Start up `mongod` in your terminal
+2. Run `npm install`
+3. Run `npm start`
+
 ## To customize your app
 Update the following names to match your app
 1. In modules/schema.module.js, update the `SCHEMANAMEHERE` to a relevant name like, `favoritesSchema`
