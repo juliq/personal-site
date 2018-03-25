@@ -19,10 +19,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html {
     height: 100%;
     background-color: var(--main-color);
-    background: linear-gradient(232deg, #8c20e4, #006699, #e420bf);
+    background: linear-gradient(230deg, #8c20e4, #006699, #e420bf);
     background-size: 600% 600%;
     font-family: "Suez One";
-    animation: gradientChanger 43s ease infinite;
+    animation: gradientChanger 50s ease infinite;
 }
 
 
@@ -159,12 +159,12 @@ a {
     text-align: right;
     color: var(--main-color);
 
-    background: linear-gradient(232deg, #8c20e4, #006699, #e420bf);
+    background: linear-gradient(230deg, #8c20e4, #006699, #e420bf);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientChanger 43s ease infinite;
+    animation: gradientChanger 50s ease infinite;
 }
 
 @media screen and (max-width: 1100px) {
@@ -267,4 +267,35 @@ a {
     .footer {
         position: relative;
     }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite;
 }

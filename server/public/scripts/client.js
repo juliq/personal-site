@@ -1,4 +1,4 @@
-const myApp = angular.module('myApp', ['ngRoute']);
+const myApp = angular.module('myApp', ['ngRoute', 'angularJSTypedEffect']);
 
 // app configuration
 myApp.config(function($routeProvider){
