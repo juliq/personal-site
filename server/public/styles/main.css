@@ -187,8 +187,9 @@ a {
 
 @media screen and (max-width: 900px) {
     .tagline {
-        font-size: 24px;
+        margin-bottom: var(--spacing);
         padding-right: initial;
+        font-size: 24px;
         text-align: left;
     }
 }
