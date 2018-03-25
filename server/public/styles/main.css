@@ -208,6 +208,12 @@ a {
     margin-left: 40px;
 }
 
+@media screen and (max-width: 900px) {
+    .social + .social {
+        margin-left: 20px;
+    }
+}
+
 .social:hover {
     transform: scale(1);
 }
@@ -218,6 +224,13 @@ a {
 
 .social__icon {
     font-size: 40px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .social__icon {
+        font-size: 24px;
+    }
 }
 
 .footer {
