@@ -3,7 +3,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Global Variables */
 :root {
-    --main-color: #069;
+    --main-color: #006699;
     --main-color-dark: #00334c;
     --main-color-light: #4c93b7;
     --gray: #b3b3b3;
@@ -19,7 +19,17 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html {
     height: 100%;
     background-color: var(--main-color);
+    background: linear-gradient(232deg, #8c20e4, #006699, #e420bf);
+    background-size: 600% 600%;
     font-family: "Suez One";
+    animation: gradientChanger 43s ease infinite;
+}
+
+
+@keyframes gradientChanger { 
+    0% { background-position: 83% 0% }
+    50% { background-position: 18% 100% }
+    100% { background-position: 83% 0% }
 }
 
 body {
@@ -148,6 +158,13 @@ a {
     font-size: 135px;
     text-align: right;
     color: var(--main-color);
+
+    background: linear-gradient(232deg, #8c20e4, #006699, #e420bf);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientChanger 43s ease infinite;
 }
 
 @media screen and (max-width: 1100px) {
@@ -247,5 +264,7 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-    position: relative;
+    .footer {
+        position: relative;
+    }
 }
