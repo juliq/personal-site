@@ -1,24 +1,18 @@
-const myApp = angular.module('myApp', ['ngRoute', 'ngMaterial']);
+const myApp = angular.module('myApp', ['ngRoute']);
 
 // app configuration
-myApp.config(function($routeProvider, $mdThemingProvider){
-  console.log('config loaded');
-
+myApp.config(function($routeProvider){
   // define our client side routes
   $routeProvider
-  .when('/URLHERE', {
-      templateUrl: '/views/viewName.html',
-      controller: 'CONTROLLERNAME as vm'
+  .when('/home', {
+      templateUrl: '/views/home.html',
+      controller: 'AppController as vm'
   })
-  .when('/URLHERE', {
-      templateUrl: '/views/viewName.html',
-      controller: 'CONTROLLERNAME as vm'
+  .when('/contact', {
+      templateUrl: '/views/contact.html',
+      controller: 'AppController as vm'
   })
   .otherwise(
-      { redirectTo: '/URLHERE' }
+      { redirectTo: '/home' }
   );
-
-  $mdThemingProvider.theme('default')
-    .primaryPalette('pink')
-    .accentPalette('pink');
 });
