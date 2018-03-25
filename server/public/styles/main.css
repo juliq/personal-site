@@ -228,6 +228,13 @@ a {
     transform: scale(.9);
 }
 
+@media screen and (max-width: 700px) {
+    .social {
+        margin-top: 0;
+        margin-bottom: var(--spacing-med);
+    }
+}
+
 .social + .social {
     margin-left: 40px;
 }
