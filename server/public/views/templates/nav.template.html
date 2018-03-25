@@ -1,11 +1,8 @@
-<md-nav-bar
-    md-no-ink-bar="disableInkBar"
-    md-selected-nav-item="currentNavItem"
-    nav-bar-aria-label="navigation links">
-    <md-nav-item md-nav-href="#!/VIEWNAME" name="VIEWNAME">
-        VIEWNAME
-    </md-nav-item>
-    <md-nav-item md-nav-href="#!/VIEWNAME" name="VIEWNAME">
-        VIEWNAME
-    </md-nav-item>
-</md-nav-bar>
+<ul class="nav">
+    <li class="nav__item">
+        <a class="nav__item__link" ng-class="vm.getClass('/home')" href="#!/home">Hello.</a>
+    </li>
+    <li class="nav__item">
+        <a class="nav__item__link" ng-class="vm.getClass('/contact')" href="#!/contact">Contact.</a>
+    </li>
+</ul>
