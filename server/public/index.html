@@ -35,8 +35,11 @@
         <div class="bkgd-graphic bkgd-graphic__box"></div>
         <div class="bkgd-graphic bkgd-graphic__circle"></div>
     
-        <main class="view-container" ng-view>
-            <!-- view HTML will be loaded here -->
+        <main class="view-container">
+            <nav ng-include="'/views/templates/nav.template.html'"></nav>
+            <div ng-view>
+                <!-- view HTML will be loaded here -->
+            </div>
         </main>
     </body>
 </html>
